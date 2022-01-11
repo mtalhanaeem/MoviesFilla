@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="3dp"
+    tools:ignore="HardcodedText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp">
+
+        <ImageView
+            android:id="@+id/imageAllMovies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="posterImage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rect_purple_20dp_bottom" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nameAllMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Free Guy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:padding="@dimen/_15sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rect_text_bg"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
